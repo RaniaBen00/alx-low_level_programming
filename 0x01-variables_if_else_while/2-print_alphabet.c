@@ -9,8 +9,8 @@
 int main(void)
 {
 int a;
-a = 'b';
-while (a <= 'b')
+a = 'z';
+while (a <= 'z')
 {
 putchar(a);
 a += 1;
