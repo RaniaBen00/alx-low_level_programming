@@ -3,9 +3,8 @@
  * main - Entry point
  * Description: a program that prints the alphabet followed by a new line
  *
- * Return: 0 (Success)
+ *Return: 0 (Success)
  */
-
 int main(void)
 {
 int a = 'n';
@@ -15,7 +14,7 @@ while (a <= 'z')
 putchar(a);
 a += 1;
 }
-while (b <= 'z');
+while (b <= 'Z');
 {
 putchar(b);
 b += 1;
