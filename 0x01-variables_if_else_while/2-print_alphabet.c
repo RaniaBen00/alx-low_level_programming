@@ -7,8 +7,9 @@
  */
 int main(void)
 {
-char a = 'b';
-while (a <= b)
+char a;
+a = 'b';
+while (a <= 'b')
 {
 putchar(a + '0');
 a++;
