@@ -15,5 +15,5 @@ putchar(a + '0');
 a++;
 }
 putchar('\n');
-retutn (0);
+return (0);
 }
