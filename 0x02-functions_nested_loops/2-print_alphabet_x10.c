@@ -1,11 +1,11 @@
-#include "main.h"
+#include"main.h"
 
 /**
  * print_x10_alphabet - function that prints 10 times the alphabe
  *
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 int Line, letter;
 for (Line = 0; Line <= 9; Line++)
