@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int count;
+	int cnt;
 	unsigned long fib1 = 0, fib2 = 1, S;
 
 	for (cnt = 0; cnt < 50; cnt++)
