@@ -4,7 +4,7 @@
  * *_strchr - function that locates a character in a string
  * @s: pointer to put the constant
  * @c: constant
- * Return: pointer to s
+ * Return: Always 0 (Success)
  */
 char *_strchr(char *s, char c)
 {
@@ -13,8 +13,8 @@ for (i = 0; s[i] >= '\0' ; i++)
 {
 if (s[i] == c)
 {
-return (s + i);
+return (&s[i]);
 }
 }
-return ('\0')
+return (0);
 }
