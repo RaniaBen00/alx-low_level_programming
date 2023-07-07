@@ -2,22 +2,39 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
- * @argc: int
- * @argv: list
- * Return: Everytime 0 (succes)
+ * _atoi - Entry point
+ * @s: string to be converted
+ * Return: Everytime 0 (success)
  */
-int main(int argc, char *argv[])
+int _atoi(char *s)
 {
-int num;
-if (argc == 3)
+int i, a, b, num, c, digit;
+i = 0;
+a = 0;
+b = 0;
+num = 0;
+c = 0;
+digit = 0;
+while (s[num] != '\0')
+	num++;
+while (i < num && c == 0)
 {
-num = atoi(argv[1] * atoi(argv[2]);
-printf("%d\n", num);
+if (s[i] == '-')
+	++a;
+if (s[i] >= '0' && s[i] <= '9')
+{
+digit = s[i] - '0';
+if (d % 2)
+digit = -digit;
+b = b * 10 + digit;
+c = 1;
+if (s[i + 1] < '0' || s[i + 1] > '9')
+	break;
+b = 0;
 }
-else
-{
-printf("error\n");
-return (1);
+i++;
 }
+if (c == 0)
+return (0);
+return (n);
 }
