@@ -19,5 +19,5 @@ if (rania == NULL)
 return (NULL);
 for (n = 0; str[n]; n++)
 rania[n] = str[n];
-return (aaa);
+return (rania);
 }
