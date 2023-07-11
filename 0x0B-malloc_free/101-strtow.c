@@ -51,7 +51,7 @@ if (c)
 {
 stop = a;
 tmf = (char *) malloc(sizeof(char) * (c + 1));
-if (tml == NULL)
+if (tmf == NULL)
 return (NULL);
 while (begin < stop)
 *tml++ = str[begin++];
