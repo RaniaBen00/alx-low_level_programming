@@ -54,9 +54,9 @@ tmf = (char *) malloc(sizeof(char) * (c + 1));
 if (tmf == NULL)
 return (NULL);
 while (begin < stop)
-*tml++ = str[begin++];
-*tml = '\0';
-coding[f] = tml - c;
+*tmf++ = str[begin++];
+*tmf = '\0';
+coding[f] = tmf - c;
 f++;
 c = 0;
 }
