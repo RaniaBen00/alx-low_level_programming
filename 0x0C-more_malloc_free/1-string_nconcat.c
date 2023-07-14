@@ -12,7 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-unsigned int a = 0, f = 0, cat1 = 0, cat2 = 0;
+unsigned int i = 0, f = 0, cat1 = 0, cat2 = 0;
 while (s1 && s1[cat1])
 cat1++;
 while (s2 && s2[cat2])
@@ -23,15 +23,15 @@ else
 s = malloc(sizeof(char) * (cat1 + cat2 + 1));
 if (!s)
 return (NULL);
-while (a < cat1)
+while (i < cat1)
 {
-s[a] = s1[a];
-a++;
+s[i] = s1[i];
+i++;
 }
-while (n < cat2 && a < (cat1 + n))
-s[a++] = s2[f++];
-while (n >= cat2 && a < (cat1 + cat2))
-s[a++] = s2[f++];
-s[a] = '\0';
+while (n < cat2 && i < (cat1 + n))
+s[i++] = s2[f++];
+while (n >= cat2 && i < (cat1 + cat2))
+s[i++] = s2[f++];
+s[i] = '\0';
 return (s);
 }
