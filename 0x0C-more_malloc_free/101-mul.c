@@ -12,7 +12,7 @@
 int is_digit(char *s)
 {
 int n = 0;
-while (s[i])
+while (s[n])
 {
 if (s[n] < '0' || s[n] > '9')
 return (0);
@@ -60,7 +60,7 @@ cat1 = _strlen(a1);
 cat2 = _strlen(a2);
 cat = cat1 + cat2 + 1;
 final = malloc(sizeof(int) * cat);
-if (!result)
+if (!final)
 return (1);
 for (i = 0; i <= cat1 + cat2; i++)
 final[i] = 0;
@@ -68,7 +68,7 @@ for (cat1 = cat1 - 1; cat1 >= 0; cat1--)
 {
 digit1 = a1[cat1] - '0';
 carry = 0;
-for (cat2 = _strlen(s2) - 1; cat2 >= 0; cat2--)
+for (cat2 = _strlen(a2) - 1; cat2 >= 0; cat2--)
 {
 digit2 = a2[cat2] - '0';
 carry += final[cat1 + cat2 + 1] + (digit1 *digit2);
