@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * *string_nconcat - function that concatenates two strings.
+ * *string_nconcat - Entry Point
  * @s1: string to append to
  * @s2: string to concatenate from
  * @n: number of bytes from s2 to concatenate to s1
@@ -28,7 +28,7 @@ while (a < cat1)
 s[a] = s1[a];
 a++;
 }
-while (a < cat2 && a < (cat1 + n))
+while (n < cat2 && a < (cat1 + n))
 s[a++] = s2[f++];
 while (n >= cat2 && a < (cat1 + cat2))
 s[a++] = s2[f++];
