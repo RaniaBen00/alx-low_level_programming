@@ -62,7 +62,7 @@ From = open(argv[1], O_RDONLY);
 RD = read(From, buff, 1024);
 To = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 do {
-if (from == -1 || RD == -1)
+if (From == -1 || RD == -1)
 {
 dprintf(STDERR_FILENO,
 "Error: Can't read from file %s\n", argv[1]);
