@@ -81,7 +81,7 @@ RD = read(From, buff, 1024);
 To = open(argv[2], O_WRONLY | O_APPEND);
 } while (RD > 0);
 free(buff);
-close_file(from);
+close_file(From);
 close_file(To);
 return (0);
 }
