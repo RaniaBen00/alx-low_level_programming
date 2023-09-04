@@ -19,7 +19,7 @@ px = open(filename, O_RDONLY);
 if (px == -1)
 return (0);
 func = malloc(sizeof(char) * letters);
-t = read(px, func, letters);
+p = read(px, func, letters);
 w = write(STDOUT_FILENO, func, p);
 free(func);
 close(px);
